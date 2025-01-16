@@ -38,7 +38,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`UserID`, `Name`, `Email`) VALUES
-(1001, 'John Doe', 'new.email@example.com'),
+(1001, 'John Doe', 'john.doe@example.com'),
 (1002, 'Jane Smith', 'jane.smith@example.com'),
 (1003, 'Alice Johnson', 'alice.johnson@example.com'),
 (1004, 'Bob Brown', 'bob.brown@example.com'),

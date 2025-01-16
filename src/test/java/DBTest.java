@@ -24,16 +24,16 @@ public class DBTest {
 
     @Test
     public void testUserDataRetrievalAndUpdate() throws Exception {
-        String selectQuery = "SELECT * FROM Users WHERE UserID = 1002";
+        String selectQuery = "SELECT * FROM Users WHERE UserID = 1001";
         ResultSet resultSet = statement.executeQuery(selectQuery);
         Assertions.assertTrue(resultSet.next(), "No user found with UserID = 1002");
 
         int userId = resultSet.getInt("UserID");
         String name = resultSet.getString("Name");
         String email = resultSet.getString("Email");
-        Assertions.assertEquals(1002, userId, "UserID mismatch!");
-        Assertions.assertEquals("Jane Smith", name, "Name mismatch!");
-        Assertions.assertEquals("jane.smith@example.com", email, "Email mismatch!");
+        Assertions.assertEquals(1001, userId, "UserID mismatch!");
+        Assertions.assertEquals("John Doe", name, "Name mismatch!");
+        Assertions.assertEquals("john.doe@example.com", email, "Email mismatch!");
 
     }
 
